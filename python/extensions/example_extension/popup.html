@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Enhancer</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔧 Page Enhancer</h1>
+            <p>Enhance your browsing experience</p>
+        </header>
+        
+        <main>
+            <div class="feature-section">
+                <h3>Quick Actions</h3>
+                
+                <button id="darkModeBtn" class="action-btn">
+                    <span class="icon">🌙</span>
+                    Toggle Dark Mode
+                </button>
+                
+                <button id="readingModeBtn" class="action-btn">
+                    <span class="icon">📖</span>
+                    Reading Mode
+                </button>
+                
+                <button id="highlightLinksBtn" class="action-btn">
+                    <span class="icon">🔗</span>
+                    Highlight Links
+                </button>
+            </div>
+            
+            <div class="feature-section">
+                <h3>Page Info</h3>
+                <div class="info-card">
+                    <div class="info-item">
+                        <span class="label">Title:</span>
+                        <span id="pageTitle" class="value">Loading...</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">URL:</span>
+                        <span id="pageUrl" class="value">Loading...</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Links:</span>
+                        <span id="linkCount" class="value">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-section">
+                <h3>Settings</h3>
+                <div class="setting-item">
+                    <label for="autoDarkMode">Auto Dark Mode</label>
+                    <input type="checkbox" id="autoDarkMode">
+                </div>
+                <div class="setting-item">
+                    <label for="highlightColor">Highlight Color</label>
+                    <input type="color" id="highlightColor" value="#ffeb3b">
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div id="status" class="status">Ready</div>
+        </footer>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 
