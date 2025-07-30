@@ -1,0 +1,327 @@
+
+1.What Python module is ideal to traverse through directory structures for DevOps file cleanup automation?
+(1 Point)
+A. glob
+B. re
+C. os
+D. json
+Reason: The os module provides functions like os.walk() to traverse directories, making it ideal for file cleanup automation.
+2.How do you upload a file to S3 using Python and Boto3?(1 Point)
+A. s3.upload(file)
+B. s3.put(file)
+C. s3_client.upload_file()
+D. s3.write()
+Reason: s3_client.upload_file() is the correct Boto3 method for uploading files to S3.
+3.Which of the following is a correct way to define a Python function?(1 Point)
+A. function myFun():
+B. def myFun():
+C. fn myFun():
+D. define myFun()
+Reason: Python functions are defined using the def keyword, e.g., def myFun():
+4.Which HTTP response code confirms that your webhook was received successfully by Jenkins or GitLab?(1 Point)
+A. 200
+B. 403
+C. 500
+D. 301
+Reason: HTTP 200 means OK/success, confirming the webhook was received.
+5.Which DevOps tool allows triggering Python scripts as pipeline steps?(1 Point)
+A. Jenkins
+B. GitHub Actions
+C. GitLab CI
+D. All of the above
+Reason: All these tools support running Python scripts as part of their pipelines.
+6.In a script automating server health checks, what is the best way to run and capture output from Linux commands?
+(1 Point)
+A. os.system()
+B. exec()
+C. subprocess.run()
+D. input()
+Reason: subprocess.run() allows running commands and capturing their output safely.
+7.Which library is used to schedule Python jobs like cron in automation?
+(1 Point)
+A. sched
+B. subprocess
+C. schedule
+D. datetime
+Reason: The schedule library is designed for job scheduling similar to cron.
+8.You want to automate cloud resource creation using Python. Which AWS SDK do you use?(1 Point)
+A. boto
+B. boto3
+C. cloudpy
+D. aws3
+Reason: boto3 is the official AWS SDK for Python.
+9.Which Python module is used to manage system resources and process stats like CPU or memory?(1 Point)
+A. resource
+B. metrics
+C. psutil
+D. monitor
+Reason: psutil provides functions to monitor system resources like CPU and memory.
+10.What is the output of the following code?
+
+print(type("DevOps"))(1 Point)
+A. <class 'int'>
+B.<class 'str'>
+C. <class 'float'>
+D. DevOps
+Reason: type("DevOps") returns <class 'str'> because "DevOps" is a string.
+11.Which keyword is used to handle exceptions in Python scripts?(1 Point)
+A. handle
+B. catch
+C. except
+D. error
+Reason: The except keyword is used in try-except blocks to handle exceptions.
+12.To read a tab-delimited (.tsv) server log, which Pandas function works best?(1 Point)
+A) pd.read_tab()
+B) pd.read_csv("file.tsv", sep="\t") 
+C) pd.read_excel("file.tsv")
+D) pd.read_json("file.tsv")
+Reason: pd.read_csv() with sep="\t" reads tab-delimited files.
+13.You are asked to monitor disk usage with Python. What’s the best approach?(1 Point)
+A. psutil.disk_usage()
+B. os.monitor_disk()
+C. shutil.size()
+D. disktools.get()
+Reason: psutil.disk_usage() provides disk usage statistics.
+14.Which module provides SSH functionality to connect to remote servers in Python?(1 Point)
+A. socket
+B. paramiko
+C. sshlib
+D. remoter
+Reason: paramiko is the standard Python library for SSH connections.
+15.Which Python construct helps retry a failed command multiple times in DevOps automation?
+(1 Point)
+A. while loop with try-except
+B. break
+C. input()
+D. assert
+Reason: A while loop with try-except allows retrying on failure until success or a limit.
+16.A Jenkins pipeline fails due to a missing Python module. What is the first thing you should check?(1 Point)
+A. OS version
+B. Python version
+C. pip install in the pipeline
+D. Cron jobs
+Reason: Ensuring pip install runs in the pipeline ensures dependencies are available.
+17.What Python module sends alerts over email/SMS in DevOps scripts?(1 Point)
+A. smtplib
+B. twilio
+C. email
+D. All of the above
+Reason: All these modules/libraries can be used for sending alerts via email or SMS.
+18.You need to replicate shell commands like ls -l in Python. Which module best fits?
+(1 Point)
+A. shlex
+B. commands
+C. subprocess
+D. shell
+Reason: subprocess is used to execute shell commands from Python.
+19.You need to create dynamic configuration files for deployment. Which module allows writing YAML files in Python?(1 Point)
+A. pyyaml
+B. yamlwriter
+C. os.path
+D. json
+Reason: pyyaml is the standard library for reading/writing YAML files in Python.
+20.Which statement best describes Python virtual environments in DevOps?(1 Point)
+A. They provide GUI tools.
+B. They isolate dependencies.
+C. They are required for Git.
+D. They are cloud backup tools.
+Reason: Virtual environments isolate dependencies for different projects.
+21.Which Python slicing expression returns every second character from a string s?(1 Point)
+Option 1
+A) s[2]
+B) s[:-1]
+C) s[::2] 
+D) s[::-2]
+Reason: s[::2] returns every second character from the string.
+22.What is the best practice to make Python automation scripts OS-independent?
+(1 Point)
+A. Hardcode file paths
+B. Use os.path or pathlib
+C. Use shell commands
+D. Avoid modules
+Reason: os.path and pathlib handle file paths in an OS-independent way.
+23.What is the best way to test Python scripts automatically in a CI/CD pipeline?(1 Point)
+A. Manual execution
+B. pytest
+C. debugger.run()
+D. print() statements
+Reason: pytest is a popular framework for automated testing in Python.
+24.What is the purpose of using subprocess in Python for DevOps tasks?(1 Point)
+A. GUI creation
+B. Database connection
+C. Execute shell commands
+D. JSON parsing
+Reason: subprocess is used to run shell commands from Python scripts.
+25.You are developing a Python tool to automate log file rotation. Which module is ideal?(1 Point)
+A. logging.handlers.TimedRotatingFileHandler
+B. logrotate.py
+C. rotate.py
+D. crontab.log
+Reason: TimedRotatingFileHandler in logging.handlers automates log rotation.
+26.Which Python statement is used to send a REST API GET request in a DevOps monitoring script?(1 Point)
+A. urlopen()
+B. requests.get()
+C. open.api()
+D. http.send()
+Reason: requests.get() is the standard way to send GET requests in Python.
+27.Your DevOps team wants alert notifications sent from Python when CPU crosses 90%. What library would you use?(1 Point)
+A. slack_sdk
+B. email
+C. smtplib
+D. Any of the above
+Reason: Any of these libraries can be used to send notifications/alerts.
+28.What does assert keyword do in Python unit tests?(1 Point)
+A. Terminates execution
+B. Logs the output
+C. Validates expected vs actual values
+D. Compiles code
+Reason: assert checks if a condition is true, validating test results.
+29.What does the with open("file.txt", "r") as f: construct do in Python?
+(1 Point)
+A. Runs a loop
+B. Handles exceptions
+C. Opens a file and automatically closes it
+D. Compresses a file
+Reason: with open(...) ensures the file is closed automatically after use.
+30.What does df.iloc[1:4] do?(1 Point)
+A) Filters rows with ID 1 and 4
+B) Selects rows by label
+C) Selects rows 1 to 3 by index 
+D) Slices columns instead of rows
+Reason: iloc[1:4] selects rows by index, from 1 up to (but not including) 4.
+31.You are writing a Python script to back up log files. What is the most appropriate module for compression?
+(1 Point)
+A. gzip
+B. tarfile
+C. zipfile
+D. All of the above
+Reason: All these modules can be used for file compression in Python.
+32.You want to execute a Python script remotely over SSH in an automated pipeline. What is the BEST tool combo?
+(1 Point)
+A. Python + paramiko
+B. telnet
+C. ftp
+D. cron + print()
+Reason: paramiko allows SSH connections and remote command execution in Python.
+33.Which protocol is commonly used for automated network configuration (like IP assignment) in DevOps scripts?
+(1 Point)
+A. SMTP
+B. DHCP
+C. ICMP
+D. FTP
+Reason: DHCP is used for dynamic IP assignment and network configuration.
+34.Which command allows you to create a Python virtual environment?(1 Point)
+A. venv create
+B. python -m venv env
+C. python virtualenv
+D. venv install
+Reason: python -m venv env is the standard command to create a virtual environment.
+35.What is the purpose of the following script block?
+
+if __name__ == "__main__":
+    main()(1 Point)
+A. Starts execution from this point
+B. Compiles the script
+C. Installs dependencies
+D. Exits immediately
+Reason: This block ensures the script runs only when executed directly, not when imported.
+36.How do you import a module named psutil?(1 Point)
+A. load psutil
+B. require("psutil")
+C. import psutil
+D. module psutil
+Reason: import psutil is the correct Python import statement.
+37.Why is slicing useful when parsing log files in DevOps automation?(1 Point)
+A) To modify log files in place
+B) To extract portions like timestamps or error codes 
+C) To add new lines
+D) To change file encoding
+Reason: Slicing helps extract specific parts of strings, such as timestamps or error codes.
+38.Which module is commonly used for file and folder operations in Python automation scripts?(1 Point)
+A. os
+B. filelib
+C. sys
+D. pathfinder
+Reason: The os module provides functions for file and directory operations.
+39.You want to parse a config.yaml file using Python. Which module should you use?
+(1 Point)
+A. json
+B. pickle
+C. yaml (pyyaml)
+D. cfgparse
+Reason: pyyaml (imported as yaml) is the standard library for YAML parsing in Python.
+40.You want to schedule a Python script to run every 30 minutes in Linux. What’s the BEST method?
+(1 Point)
+A. Use time.sleep()
+B. Use cron
+C. Use loop.run()
+D. Use interval.run()
+Reason: cron is the standard Linux tool for scheduling recurring tasks.
+41.Which Python tool can be used for security auditing of DevOps scripts?
+(1 Point)
+A. bandit
+B. pylint
+C. black
+D. tox
+Reason: bandit is a security linter for Python code.
+42.In a Dockerfile for a Python app, what is the correct base image to use?(1 Point)
+A. ubuntu:latest
+B. python:3.11
+C. alpine
+D. pip:latest
+Reason: python:3.11 is a Python base image, suitable for Python apps.
+43.What is the output of the following Python code?
+
+print("DevOps" * 2)(1 Point)
+A. DevOps DevOps
+B. DevOps*2
+C. DevOpsDevOps
+D. Error
+Reason: "DevOps" * 2 results in the string DevOpsDevOps.
+44.What format does boto3 use to return most AWS API responses?(1 Point)
+A. JSON
+B. Dict
+C. XML
+D. YAML
+Reason: boto3 returns responses as Python dictionaries.
+45.Which Python data type is used to store key-value pairs (e.g., for config parsing)?(1 Point)
+A. List
+B. Set
+C. Tuple
+D. Dictionary
+Reason: Dictionaries store key-value pairs in Python.
+46.How would you handle script errors like "file not found" in automation?
+(1 Point)
+A. try...except FileNotFoundError
+B. if file not found:
+C. os.abort()
+D. pass
+Reason: try...except FileNotFoundError handles missing file errors gracefully.
+47.You are using Python to monitor disk usage. Which module gives disk stats?
+(1 Point)
+A. os
+B. psutil
+C. resource
+D. systemd
+Reason: psutil provides detailed disk usage statistics.
+48.You’re logging script output for DevOps auditing. Which is the preferred module?
+(1 Point)
+A. print()
+B. os.write()
+C. logging
+D. traceback
+Reason: The logging module is designed for robust, configurable logging.
+49.You need to write a Python script to archive log files older than 7 days. Which module will be MOST appropriate?
+(1 Point)
+A. os
+B. shutil
+C. time
+D. tarfile
+Reason: tarfile is used to create archives (tarballs) of files in Python.
+50.Which command will install Python dependencies listed in a requirements.txt file?
+(1 Point)
+A. python requirements.txt
+B. pip install -r requirements.txt
+C. apt-get requirements.txt
+D. python -r requirements.txt
+Reason: pip install -r requirements.txt installs all dependencies from the file.
