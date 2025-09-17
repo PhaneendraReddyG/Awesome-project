@@ -1,0 +1,4 @@
+2025-09-11 10:22:33 INFO Starting application
+2025-09-11 10:22:34 ERROR Database connection failed
+2025-09-11 10:22:35 WARN Retrying connection
+2025-09-11 10:22:36 ERROR Authentication failed
